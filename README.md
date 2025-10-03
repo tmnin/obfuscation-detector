@@ -1,1 +1,1 @@
-# obfuscation-dectector
+# obfuscation-detector
