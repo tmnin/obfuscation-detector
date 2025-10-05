@@ -316,3 +316,8 @@ XlsxWriter==3.2.2
 xxhash==3.5.0
 yarl==1.19.0
 zipp==1.0.0
+groq
+fastapi
+uvicorn
+pydantic
+python-multipart
