@@ -10,8 +10,12 @@ class LlamaStyleAnalyzer:
             print("WARNING: GROQ_API_KEY not found in environment variables")
             self.client = None
         else:
-            self.client = Groq(api_key=api_key)
-            print("Llama analyzer initialized with Groq API")
+            try:
+                self.client = Groq(api_key=api_key)
+                print("Llama analyzer initialized with Groq API")
+            except Exception as e:
+                print(f"Failed to initialize Groq client: {e}")
+                self.client = None
     
     def analyze_stylistic_features(self, text):
         """Analyze stylistic features using Llama"""
