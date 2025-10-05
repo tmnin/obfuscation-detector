@@ -1,0 +1,21 @@
+Using pip 25.2 from /home/abeer/Desktop/Coding/obfuscation-detector/.venv-test/lib/python3.10/site-packages/pip (python 3.10)
+Collecting accelerate>=0.24.0 (from -r requirements.txt (line 1))
+  Obtaining dependency information for accelerate>=0.24.0 from https://files.pythonhosted.org/packages/5f/a0/d9ef19f780f319c21ee90ecfef4431cbeeca95bec7f14071785c17b6029b/accelerate-1.10.1-py3-none-any.whl.metadata
+  Using cached accelerate-1.10.1-py3-none-any.whl.metadata (19 kB)
+Collecting aiohappyeyeballs==2.6.1 (from -r requirements.txt (line 2))
+  Obtaining dependency information for aiohappyeyeballs==2.6.1 from https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata
+  Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiohttp==3.11.16 (from -r requirements.txt (line 3))
+  Obtaining dependency information for aiohttp==3.11.16 from https://files.pythonhosted.org/packages/2b/0d/d2423936962e3c711fafd5bb9172a99e6b07dd63e086515aa957d8a991fd/aiohttp-3.11.16-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached aiohttp-3.11.16-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+Collecting aiosignal==1.3.2 (from -r requirements.txt (line 4))
+  Obtaining dependency information for aiosignal==1.3.2 from https://files.pythonhosted.org/packages/ec/6a/bc7e17a3e87a2985d3e8f4da4cd0f481060eb78fb08596c42be62c90a4d9/aiosignal-1.3.2-py2.py3-none-any.whl.metadata
+  Using cached aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting annotated-types==0.7.0 (from -r requirements.txt (line 5))
+  Obtaining dependency information for annotated-types==0.7.0 from https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl.metadata
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting anyio==3.7.1 (from -r requirements.txt (line 6))
+  Obtaining dependency information for anyio==3.7.1 from https://files.pythonhosted.org/packages/19/24/44299477fe7dcc9cb58d0a57d5a7588d6af2ff403fdd2d47a246c91a3246/anyio-3.7.1-py3-none-any.whl.metadata
+  Using cached anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+ERROR: Could not find a version that satisfies the requirement apturl==0.5.2 (from versions: none)
+ERROR: No matching distribution found for apturl==0.5.2
