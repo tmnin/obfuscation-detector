@@ -11,7 +11,7 @@ app = FastAPI(title="Authorship Obfuscation Detector")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://tmnin.github.io",  # Replace with YOUR actual username!
+    allow_origins=["https://tmnin.github.io", 
         "http://localhost:3000",
         "http://localhost:3001",
         "*"],
