@@ -63,44 +63,8 @@ Respond in JSON format:
         }
     
     def detect_inconsistencies(self, segments):
-        """Detect inconsistencies between segments using Llama"""
-        if not self.client or len(segments) < 2:
-            return self._fallback_inconsistencies(segments)
-        
-        try:
-            # Analyze first two segments for comparison
-            segment_texts = "\n\n---SEGMENT---\n\n".join(segments[:3])
-            
-            prompt = f"""Compare the writing style across these text segments. Look for:
-- Changes in vocabulary sophistication
-- Shifts in sentence structure
-- Inconsistent formality levels
-- Unusual stylistic variations
-
-Rate the consistency from 0.0 (completely inconsistent) to 1.0 (perfectly consistent).
-
-{segment_texts}
-
-Respond with just a number between 0.0 and 1.0."""
-
-            response = self.client.chat.completions.create(
-                messages=[{"role": "user", "content": prompt}],
-                model="llama-3.1-8b-instant",
-                temperature=0.3,
-                max_tokens=50
-            )
-            
-            consistency_score = float(response.choices[0].message.content.strip())
-            
-            return {
-                'consistency_score': max(0.0, min(1.0, consistency_score)),
-                'segments_analyzed': len(segments),
-                'variance': 1.0 - consistency_score
-            }
-            
-        except Exception as e:
-            print(f"Llama inconsistency detection error: {e}")
-            return self._fallback_inconsistencies(segments)
+        """Detect inconsistencies between segments using statistical analysis"""
+        return self._fallback_inconsistencies(segments)
     
     def _fallback_inconsistencies(self, segments):
         """Fallback inconsistency detection"""
