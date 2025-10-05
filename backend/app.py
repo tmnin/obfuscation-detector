@@ -11,8 +11,7 @@ app = FastAPI(title="Authorship Obfuscation Detector")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://obfuscationdetector-1glgu233p-abeers-projects-89808ee1.vercel.app",
-    "https://tmnin.github.io", 
+    allow_origins=["https://obfuscationdetector.netlify.app",
     "http://localhost:3000",
     "http://localhost:3001",],
     allow_credentials=True,
