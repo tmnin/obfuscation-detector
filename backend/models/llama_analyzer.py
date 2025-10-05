@@ -35,7 +35,7 @@ Respond in JSON format:
 
             response = self.client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="llama-3.1-70b-versatile",
+                model="llama-3.1-8b-instant",
                 temperature=0.3,
                 max_tokens=200
             )
@@ -85,7 +85,7 @@ Respond with just a number between 0.0 and 1.0."""
 
             response = self.client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="llama-3.1-70b-versatile",
+                model="llama-3.1-8b-instant",
                 temperature=0.3,
                 max_tokens=50
             )
@@ -140,7 +140,7 @@ Be specific and professional."""
 
             response = self.client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="llama-3.1-70b-versatile",
+                model="llama-3.1-8b-instant",
                 temperature=0.5,
                 max_tokens=300
             )
