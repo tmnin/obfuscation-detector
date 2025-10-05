@@ -1,14 +1,15 @@
 {
   "name": "obfuscation-detector-frontend",
   "version": "1.0.0",
+  "homepage": "https://tmnin.github.io/obfuscation-detector",
   "private": true,
   "dependencies": {
+    "axios": "^1.6.0",
+    "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "axios": "^1.6.0",
-    "recharts": "^2.10.0",
-    "lucide-react": "^0.263.1"
+    "react-scripts": "^0.0.0",
+    "recharts": "^2.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,8 +35,9 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.0",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31"
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0"
   }
 }
