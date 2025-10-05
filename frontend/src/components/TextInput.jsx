@@ -27,9 +27,8 @@ export const TextInput = ({ onAnalysisComplete }) => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:8000/analyze', {
-        text: text,
-        segment_size: 200
+        const response = await axios.post('https://obfuscation-detector.onrender.com/analyze', {        text: text,
+        segment_size: 50
       });
       onAnalysisComplete(response.data);
     } catch (err) {
