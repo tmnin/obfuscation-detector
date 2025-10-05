@@ -39,7 +39,7 @@ async def analyze_text(input_data: TextInput):
         segments = stylometric_analyzer.segment_text(text, input_data.segment_size)
         
         if len(segments) < 2:
-            raise HTTPException(400, "Text too short for reliable analysis. Need at least 3 segments.")
+            raise HTTPException(400, "Text too short for reliable analysis. Need at least 2 segments.")
         
         segment_features = [stylometric_analyzer.extract_features(seg) for seg in segments]
         
